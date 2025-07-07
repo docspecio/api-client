@@ -28,7 +28,7 @@ describe(Client, () => {
                         return false
                     }
 
-                    const lines = body.split('\r\n')
+                    const lines = body.trim().split('\r\n')
 
                     return (
                         lines.length === 6 &&
@@ -66,7 +66,7 @@ describe(Client, () => {
                         return false
                     }
 
-                    const lines = body.split('\r\n')
+                    const lines = body.trim().split('\r\n')
 
                     return (
                         lines.length === 6 &&
@@ -105,7 +105,7 @@ describe(Client, () => {
                         return false
                     }
 
-                    const lines = body.split('\r\n')
+                    const lines = body.trim().split('\r\n')
 
                     return (
                         lines.length === 6 &&
