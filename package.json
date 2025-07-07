@@ -46,6 +46,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/docspecio/api-client.git"
+        "url": "git+https://github.com/docspecio/api-client.git"
     }
 }
