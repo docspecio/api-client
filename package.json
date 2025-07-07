@@ -23,8 +23,7 @@
         "lint": "npx -y eslint .",
         "fix": "npm run format && npm run lint -- --fix"
     },
-    "dependencies": {
-    },
+    "dependencies": {},
     "devDependencies": {
         "@nldoc/configs": "^1.2.5",
         "@tsconfig/node-lts": "^22.0.0",
@@ -41,5 +40,8 @@
         "commitizen": {
             "path": "./node_modules/cz-conventional-changelog"
         }
+    },
+    "engines": {
+        "node": ">=18.0.0"
     }
 }
