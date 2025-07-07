@@ -3,8 +3,8 @@ on:
   pull_request: # runs on every PR
 
 jobs:
-  lint:
-    name: Linting and testing
+  build-lint-test:
+    name: Building, linting and testing
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -16,9 +16,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'
+          cache: "npm"
 
       - run: npm ci
+      - run: npm run build
       - run: npm run lint
       - run: npm run format:check
       - run: npm run test
