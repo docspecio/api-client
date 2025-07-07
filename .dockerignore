@@ -1,0 +1,7 @@
+dist/
+node_modules/
+.eslintcache
+.DS_Store
+coverage
+junit.xml
+*.iml

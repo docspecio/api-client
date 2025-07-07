@@ -1,0 +1,17 @@
+{
+    "extends": "@tsconfig/node-lts/tsconfig.json",
+    "compilerOptions": {
+        "outDir": "dist",
+        "strictNullChecks": true,
+        "forceConsistentCasingInFileNames": true,
+        "allowSyntheticDefaultImports": true,
+        "typeRoots": ["node_modules/@types", "@types", "node_modules"],
+        "types": ["node"],
+        "sourceMap": true,
+        "declaration": true,
+        "noEmit": true,
+        "lib": ["dom"]
+    },
+    "include": ["./*.ts", "./src/**/*.ts"],
+    "exclude": ["node_modules", "dist", "bin"]
+}
