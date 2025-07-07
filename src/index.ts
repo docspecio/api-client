@@ -1,2 +1,2 @@
-export * from './Client.js'
-export * from './errors/APIError.js'
+export * from "./Client.js";
+export * from "./errors/DocSpecAPIError.js";
