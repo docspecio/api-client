@@ -1,5 +1,5 @@
 {
-    "name": "@docspecio/api-client",
+    "name": "@docspec.io/api-client",
     "version": "0.1.0",
     "description": "Client for DocSpec's API",
     "author": "DocSpec",
